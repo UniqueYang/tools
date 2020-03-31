@@ -43,5 +43,6 @@ def mathpix_clipboard():  # 识别剪贴板公式
     })
     pyperclip.copy("$" + r['latex_simplified'] + "$")
 
+
 if __name__ == '__main__':
     mathpix_clipboard()
