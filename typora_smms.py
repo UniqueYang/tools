@@ -15,6 +15,9 @@ while numbers > 1:
         exit()
 
     headers = {}
+    '''
+    :api key
+    '''
     headers['Authorization'] = "xxxxxxxx"
     results = requests.post(baseUrl, headers=headers, files={'smfile': file})
     result = results.json()
